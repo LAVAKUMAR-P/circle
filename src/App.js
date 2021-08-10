@@ -19,7 +19,7 @@ function App() {
     },
   ]);
   let Incerment = (id) => {
-    let numIndex = count.findIndex((obj) => obj.id == id);
+    let numIndex = count.findIndex((obj) => obj.id === id);
     count[numIndex].num = count[numIndex].num + 1;
     setCount([...count]);
     getRandomColor();
